@@ -14,6 +14,7 @@ MozJPEG is meant to be used as a library in graphics programs and image processi
 * Progressive encoding with "jpegrescan" optimization. It can be applied to any JPEG file (with `jpegtran`) to losslessly reduce file size.
 * Trellis quantization. When converting other formats to JPEG it maximizes quality/filesize ratio.
 * Comes with new quantization table presets, e.g. tuned for high-resolution displays.
+* `-maxsize N` fixed-size mode. It picks a skin/chrominance-weighted quantization table from the byte budget and normally needs only one encode pass, with at most one corrective pass if the estimate misses the budget.
 * Fully compatible with all web browsers.
 * Can be seamlessly integrated into any program that uses the industry-standard libjpeg API. There's no need to write any MozJPEG-specific integration code.
 

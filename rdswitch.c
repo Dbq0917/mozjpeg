@@ -288,7 +288,7 @@ bogus:
  * The spec says that the values given produce "good" quality, and
  * when divided by 2, "very good" quality.
  */
-static const unsigned int std_luminance_quant_tbl[9][DCTSIZE2] = {
+static const unsigned int std_luminance_quant_tbl[10][DCTSIZE2] = {
   {
     /* JPEG Annex K
      */
@@ -392,10 +392,21 @@ static const unsigned int std_luminance_quant_tbl[9][DCTSIZE2] = {
     25, 20, 25, 33, 43, 54, 64, 74,
     34, 26, 31, 39, 51, 64, 77, 91,
     45, 33, 38, 47, 59, 74, 91, 108
+  },
+  {
+    /* Skin/edge-preserving table for fixed-size encoding. */
+    13,  9, 10, 13, 17, 22, 31, 40,
+     9, 10, 10, 11, 14, 18, 23, 41,
+    10, 10, 14, 16, 19, 22, 39, 48,
+    13, 11, 16, 22, 25, 41, 49, 59,
+    17, 14, 19, 25, 45, 54, 64, 74,
+    22, 18, 22, 41, 54, 68, 80, 92,
+    31, 23, 39, 49, 64, 80, 96, 114,
+    40, 41, 48, 59, 74, 92, 114, 135
   }
 };
 
-static const unsigned int std_chrominance_quant_tbl[9][DCTSIZE2] = {
+static const unsigned int std_chrominance_quant_tbl[10][DCTSIZE2] = {
   {
     /* JPEG Annex K
      */
@@ -503,6 +514,17 @@ static const unsigned int std_chrominance_quant_tbl[9][DCTSIZE2] = {
     25, 20, 25, 33, 43, 54, 64, 74,
     34, 26, 31, 39, 51, 64, 77, 91,
     45, 33, 38, 47, 59, 74, 91, 108
+  },
+  {
+    /* Chrominance companion to the skin/edge-preserving table. */
+     8,  6,  7,  8, 11, 15, 31, 40,
+     6,  7,  7,  7,  9, 18, 23, 30,
+     7,  7,  9, 11, 19, 22, 28, 34,
+     8,  7, 11, 22, 25, 30, 35, 42,
+    11,  9, 19, 25, 32, 39, 46, 53,
+    15, 18, 22, 30, 39, 49, 58, 67,
+    31, 23, 28, 35, 46, 58, 69, 82,
+    40, 30, 34, 42, 53, 67, 82, 97
   }
 };
 

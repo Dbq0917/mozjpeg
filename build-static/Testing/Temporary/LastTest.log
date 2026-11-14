@@ -1,0 +1,3008 @@
+Start testing: Nov 15 03:29 CST
+----------------------------------------------------------
+90/194 Testing: cjpeg-static-lossless
+90/194 Test: cjpeg-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-lossless" "4" "-restart" "1" "-quality" "1" "-grayscale" "-optimize" "-dct" "float" "-smooth" "100" "-baseline" "-qslots" "1,0,0" "-sample" "1x2,3x4,2x1" "-outfile" "testout-static_lossless.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-lossless" end time: Nov 15 03:29 CST
+"cjpeg-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/194 Testing: cjpeg-static-420-q100-ifast-prog
+30/194 Test: cjpeg-static-420-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x2" "-quality" "100" "-dct" "fast" "-scans" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test.scan" "-outfile" "testout-static_420_q100_ifast_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-420-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-420-q100-ifast-prog" end time: Nov 15 03:29 CST
+"cjpeg-static-420-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+1/194 Testing: cjpeg16-static-lossless
+1/194 Test: cjpeg16-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-lossless" "4" "-restart" "1" "-quality" "1" "-grayscale" "-optimize" "-dct" "float" "-smooth" "100" "-baseline" "-qslots" "1,0,0" "-sample" "1x2,3x4,2x1" "-precision" "16" "-outfile" "testout16_lossless.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg16-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg16-static-lossless" end time: Nov 15 03:29 CST
+"cjpeg16-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+174/194 Testing: cjpeg12-static-lossless
+174/194 Test: cjpeg12-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-lossless" "4" "-restart" "1" "-quality" "1" "-grayscale" "-optimize" "-dct" "float" "-smooth" "100" "-baseline" "-qslots" "1,0,0" "-sample" "1x2,3x4,2x1" "-precision" "12" "-outfile" "testout12-static_lossless.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-lossless" end time: Nov 15 03:29 CST
+"cjpeg12-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+128/194 Testing: cjpeg12-static-420-q100-ifast-prog
+128/194 Test: cjpeg12-static-420-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x2" "-quality" "100" "-dct" "fast" "-scans" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test.scan" "-precision" "12" "-outfile" "testout12-static_420_q100_ifast_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-420-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-420-q100-ifast-prog" end time: Nov 15 03:29 CST
+"cjpeg12-static-420-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/194 Testing: cjpeg-static-3x2-float-prog
+48/194 Test: cjpeg-static-3x2-float-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "3x2" "-dct" "float" "-prog" "-outfile" "testout-static_3x2_float_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-3x2-float-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-3x2-float-prog" end time: Nov 15 03:29 CST
+"cjpeg-static-3x2-float-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+102/194 Testing: cjpeg-static-444-islow-prog
+102/194 Test: cjpeg-static-444-islow-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-prog" "-precision" "8" "-sample" "1x1" "-outfile" "testout-static_444_islow_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-444-islow-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-444-islow-prog" end time: Nov 15 03:29 CST
+"cjpeg-static-444-islow-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+180/194 Testing: cjpeg12-static-420-islow-prog
+180/194 Test: cjpeg12-static-420-islow-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-prog" "-precision" "12" "-outfile" "testout12-static_420_islow_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-420-islow-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-420-islow-prog" end time: Nov 15 03:29 CST
+"cjpeg12-static-420-islow-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/194 Testing: cjpeg-static-rgb-islow
+5/194 Test: cjpeg-static-rgb-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-rgb" "-dct" "int" "-icc" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test1.icc" "-outfile" "testout-static_rgb_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-rgb-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-rgb-islow" end time: Nov 15 03:29 CST
+"cjpeg-static-rgb-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+134/194 Testing: cjpeg12-static-gray-islow
+134/194 Test: cjpeg12-static-gray-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-gray" "-dct" "int" "-precision" "12" "-outfile" "testout12-static_gray_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-gray-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-gray-islow" end time: Nov 15 03:29 CST
+"cjpeg12-static-gray-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/194 Testing: cjpeg-static-3x2-ifast-prog
+52/194 Test: cjpeg-static-3x2-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "3x2" "-dct" "fast" "-prog" "-outfile" "testout-static_3x2_ifast_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-3x2-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-3x2-ifast-prog" end time: Nov 15 03:29 CST
+"cjpeg-static-3x2-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+111/194 Testing: cjpeg12-static-rgb-islow
+111/194 Test: cjpeg12-static-rgb-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-rgb" "-dct" "int" "-icc" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test1.icc" "-precision" "12" "-outfile" "testout12-static_rgb_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-rgb-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-rgb-islow" end time: Nov 15 03:29 CST
+"cjpeg12-static-rgb-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+183/194 Testing: cjpeg12-static-444-islow
+183/194 Test: cjpeg12-static-444-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-sample" "1x1" "-precision" "12" "-outfile" "testout12-static_444_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-444-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-444-islow" end time: Nov 15 03:29 CST
+"cjpeg12-static-444-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/194 Testing: cjpeg-static-422-ifast-opt
+16/194 Test: cjpeg-static-422-ifast-opt
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x1" "-dct" "fast" "-opt" "-outfile" "testout-static_422_ifast_opt.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-422-ifast-opt" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-422-ifast-opt" end time: Nov 15 03:29 CST
+"cjpeg-static-422-ifast-opt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+142/194 Testing: cjpeg12-static-3x2-float-prog
+142/194 Test: cjpeg12-static-3x2-float-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "3x2" "-dct" "float" "-prog" "-precision" "12" "-outfile" "testout12-static_3x2_float_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-3x2-float-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-3x2-float-prog" end time: Nov 15 03:29 CST
+"cjpeg12-static-3x2-float-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/194 Testing: cjpeg-static-440-islow
+20/194 Test: cjpeg-static-440-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "1x2" "-dct" "int" "-outfile" "testout-static_440_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-440-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-440-islow" end time: Nov 15 03:29 CST
+"cjpeg-static-440-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+186/194 Testing: cjpeg12-static-444-islow-prog
+186/194 Test: cjpeg12-static-444-islow-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-prog" "-precision" "12" "-sample" "1x1" "-outfile" "testout12-static_444_islow_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-444-islow-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-444-islow-prog" end time: Nov 15 03:29 CST
+"cjpeg12-static-444-islow-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+118/194 Testing: cjpeg12-static-422-ifast-opt
+118/194 Test: cjpeg12-static-422-ifast-opt
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x1" "-dct" "fast" "-opt" "-precision" "12" "-outfile" "testout12-static_422_ifast_opt.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-422-ifast-opt" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-422-ifast-opt" end time: Nov 15 03:29 CST
+"cjpeg12-static-422-ifast-opt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+146/194 Testing: cjpeg12-static-3x2-ifast-prog
+146/194 Test: cjpeg12-static-3x2-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "3x2" "-dct" "fast" "-prog" "-precision" "12" "-outfile" "testout12-static_3x2_ifast_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-3x2-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-3x2-ifast-prog" end time: Nov 15 03:29 CST
+"cjpeg12-static-3x2-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+96/194 Testing: cjpeg-static-420-islow-prog
+96/194 Test: cjpeg-static-420-islow-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-prog" "-precision" "8" "-outfile" "testout-static_420_islow_prog.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-420-islow-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-420-islow-prog" end time: Nov 15 03:29 CST
+"cjpeg-static-420-islow-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+122/194 Testing: cjpeg12-static-440-islow
+122/194 Test: cjpeg12-static-440-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "1x2" "-dct" "int" "-precision" "12" "-outfile" "testout12-static_440_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-440-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-440-islow" end time: Nov 15 03:29 CST
+"cjpeg12-static-440-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/194 Testing: cjpeg-static-gray-islow
+36/194 Test: cjpeg-static-gray-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-gray" "-dct" "int" "-outfile" "testout-static_gray_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-gray-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-gray-islow" end time: Nov 15 03:29 CST
+"cjpeg-static-gray-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+99/194 Testing: cjpeg-static-444-islow
+99/194 Test: cjpeg-static-444-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-dct" "int" "-sample" "1x1" "-precision" "8" "-outfile" "testout-static_444_islow.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-444-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-444-islow" end time: Nov 15 03:29 CST
+"cjpeg-static-444-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+80/194 Testing: djpeg-static-420-islow-256
+80/194 Test: djpeg-static-420-islow-256
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-colors" "256" "-bmp" "-outfile" "testout-static_420_islow_256.bmp" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-256" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-256" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-256" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/194 Testing: djpeg-static-rgb-islow
+7/194 Test: djpeg-static-rgb-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-ppm" "-icc" "testout-static_rgb_islow.icc" "-outfile" "testout-static_rgb_islow.ppm" "testout-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/194 Testing: djpeg-static-422m-ifast-565
+26/194 Test: djpeg-static-422m-ifast-565
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-nosmooth" "-rgb565" "-dither" "none" "-bmp" "-outfile" "testout-static_422m_ifast_565.bmp" "testout-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast-565" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast-565" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast-565" time elapsed: 00:00:00
+----------------------------------------------------------
+
+72/194 Testing: djpeg-static-420m-islow-1_2
+72/194 Test: djpeg-static-420m-islow-1_2
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/2" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_1_2.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_2" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_2" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+191/194 Testing: example-12bit-static-compress
+191/194 Test: example-12bit-static-compress
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/example-static" "compress" "-q" "95" "-precision" "12" "testout12-static-example.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-12bit-static-compress" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"example-12bit-static-compress" end time: Nov 15 03:29 CST
+"example-12bit-static-compress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+107/194 Testing: example-8bit-static-compress
+107/194 Test: example-8bit-static-compress
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/example-static" "compress" "-q" "95" "testout-static-example.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-8bit-static-compress" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"example-8bit-static-compress" end time: Nov 15 03:29 CST
+"example-8bit-static-compress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/194 Testing: djpeg-static-gray-islow-565
+42/194 Test: djpeg-static-gray-islow-565
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-dither" "none" "-bmp" "-outfile" "testout-static_gray_islow_565.bmp" "testout-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-565" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-565" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-565" time elapsed: 00:00:00
+----------------------------------------------------------
+
+150/194 Testing: djpeg12-static-420m-islow-2_1
+150/194 Test: djpeg12-static-420m-islow-2_1
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "2/1" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_2_1.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-2_1" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-2_1" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-2_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+164/194 Testing: djpeg12-static-420m-islow-5_8
+164/194 Test: djpeg12-static-420m-islow-5_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "5/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_5_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-5_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-5_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-5_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+181/194 Testing: djpeg12-static-420-islow-prog-crop62x62_71_71
+181/194 Test: djpeg12-static-420-islow-prog-crop62x62_71_71
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-crop" "62x62+71+71" "-ppm" "-outfile" "testout12-static_420_islow_prog_crop62x62,71,71.ppm" "testout12-static_420_islow_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-islow-prog-crop62x62_71_71" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-islow-prog-crop62x62_71_71" end time: Nov 15 03:29 CST
+"djpeg12-static-420-islow-prog-crop62x62_71_71" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/194 Testing: jpegtran-static-icc
+10/194 Test: jpegtran-static-icc
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/jpegtran-static" "-revert" "-copy" "all" "-icc" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test3.icc" "-outfile" "testout-static_rgb_islow2.jpg" "testout-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran-static-icc" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran-static-icc" end time: Nov 15 03:29 CST
+"jpegtran-static-icc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+132/194 Testing: djpeg12-static-420m-q100-ifast-prog
+132/194 Test: djpeg12-static-420m-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-nosmooth" "-outfile" "testout12-static_420m_q100_ifast.ppm" "testout12-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-q100-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+103/194 Testing: djpeg-static-444-islow-prog-crop98x98_13_13
+103/194 Test: djpeg-static-444-islow-prog-crop98x98_13_13
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-crop" "98x98+13+13" "-ppm" "-outfile" "testout-static_444_islow_prog_crop98x98,13,13.ppm" "testout-static_444_islow_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-444-islow-prog-crop98x98_13_13" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-444-islow-prog-crop98x98_13_13" end time: Nov 15 03:29 CST
+"djpeg-static-444-islow-prog-crop98x98_13_13" time elapsed: 00:00:00
+----------------------------------------------------------
+
+58/194 Testing: djpeg-static-420m-islow-15_8
+58/194 Test: djpeg-static-420m-islow-15_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "15/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_15_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-15_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-15_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-15_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+86/194 Testing: djpeg-static-420m-islow-565
+86/194 Test: djpeg-static-420m-islow-565
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-nosmooth" "-rgb565" "-dither" "none" "-bmp" "-outfile" "testout-static_420m_islow_565.bmp" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-565" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-565" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-565" time elapsed: 00:00:00
+----------------------------------------------------------
+
+152/194 Testing: djpeg12-static-420m-islow-15_8
+152/194 Test: djpeg12-static-420m-islow-15_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "15/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_15_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-15_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-15_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-15_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/194 Testing: djpeg-static-gray-islow-565D
+44/194 Test: djpeg-static-gray-islow-565D
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-bmp" "-outfile" "testout-static_gray_islow_565D.bmp" "testout-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-565D" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-565D" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-565D" time elapsed: 00:00:00
+----------------------------------------------------------
+
+60/194 Testing: djpeg-static-420m-islow-13_8
+60/194 Test: djpeg-static-420m-islow-13_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "13/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_13_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-13_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-13_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-13_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/194 Testing: djpeg-static-rgb-islow-565
+12/194 Test: djpeg-static-rgb-islow-565
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-dither" "none" "-bmp" "-outfile" "testout-static_rgb_islow_565.bmp" "testout-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-565" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-565" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-565" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/194 Testing: djpeg-static-422m-ifast-565D
+28/194 Test: djpeg-static-422m-ifast-565D
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-nosmooth" "-rgb565" "-bmp" "-outfile" "testout-static_422m_ifast_565D.bmp" "testout-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast-565D" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast-565D" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast-565D" time elapsed: 00:00:00
+----------------------------------------------------------
+
+136/194 Testing: djpeg12-static-gray-islow
+136/194 Test: djpeg12-static-gray-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-outfile" "testout12-static_gray_islow.ppm" "testout12-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-gray-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-gray-islow" end time: Nov 15 03:29 CST
+"djpeg12-static-gray-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+116/194 Testing: jpegtran12-static-icc
+116/194 Test: jpegtran12-static-icc
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/jpegtran-static" "-revert" "-copy" "all" "-icc" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/test3.icc" "-outfile" "testout12-static_rgb_islow2.jpg" "testout12-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran12-static-icc" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran12-static-icc" end time: Nov 15 03:29 CST
+"jpegtran12-static-icc" time elapsed: 00:00:00
+----------------------------------------------------------
+
+166/194 Testing: djpeg12-static-420m-islow-1_2
+166/194 Test: djpeg12-static-420m-islow-1_2
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/2" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_1_2.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_2" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_2" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+74/194 Testing: djpeg-static-420m-islow-3_8
+74/194 Test: djpeg-static-420m-islow-3_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "3/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_3_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-3_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-3_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-3_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+184/194 Testing: djpeg12-static-444-islow-skip1_6
+184/194 Test: djpeg12-static-444-islow-skip1_6
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-skip" "1,6" "-ppm" "-outfile" "testout12-static_444_islow_skip1,6.ppm" "testout12-static_444_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-444-islow-skip1_6" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-444-islow-skip1_6" end time: Nov 15 03:29 CST
+"djpeg12-static-444-islow-skip1_6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+105/194 Testing: jpegtran-static-crop
+105/194 Test: jpegtran-static-crop
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/jpegtran-static" "-revert" "-crop" "120x90+20+50" "-transpose" "-perfect" "-outfile" "testout-static_crop.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran-static-crop" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran-static-crop" end time: Nov 15 03:29 CST
+"jpegtran-static-crop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/194 Testing: djpeg-static-420-q100-ifast-prog
+32/194 Test: djpeg-static-420-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout-static_420_q100_ifast.ppm" "testout-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-q100-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg-static-420-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+88/194 Testing: djpeg-static-420m-islow-565D
+88/194 Test: djpeg-static-420m-islow-565D
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-nosmooth" "-rgb565" "-bmp" "-outfile" "testout-static_420m_islow_565D.bmp" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-565D" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-565D" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-565D" time elapsed: 00:00:00
+----------------------------------------------------------
+
+168/194 Testing: djpeg12-static-420m-islow-3_8
+168/194 Test: djpeg12-static-420m-islow-3_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "3/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_3_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-3_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-3_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-3_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+154/194 Testing: djpeg12-static-420m-islow-13_8
+154/194 Test: djpeg12-static-420m-islow-13_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "13/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_13_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-13_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-13_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-13_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+120/194 Testing: djpeg12-static-422-ifast
+120/194 Test: djpeg12-static-422-ifast
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout12-static_422_ifast.ppm" "testout12-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-422-ifast" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-422-ifast" end time: Nov 15 03:29 CST
+"djpeg12-static-422-ifast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+62/194 Testing: djpeg-static-420m-islow-11_8
+62/194 Test: djpeg-static-420m-islow-11_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "11/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_11_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-11_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-11_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-11_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/194 Testing: cjpeg-static-420s-ifast-opt
+46/194 Test: cjpeg-static-420s-ifast-opt
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x2" "-smooth" "1" "-dct" "int" "-opt" "-outfile" "testout-static_420s_ifast_opt.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-420s-ifast-opt" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-420s-ifast-opt" end time: Nov 15 03:29 CST
+"cjpeg-static-420s-ifast-opt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+76/194 Testing: djpeg-static-420m-islow-1_4
+76/194 Test: djpeg-static-420m-islow-1_4
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/4" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_1_4.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_4" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_4" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+187/194 Testing: djpeg12-static-444-islow-prog-crop98x98_13_13
+187/194 Test: djpeg12-static-444-islow-prog-crop98x98_13_13
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-crop" "98x98+13+13" "-ppm" "-outfile" "testout12-static_444_islow_prog_crop98x98,13,13.ppm" "testout12-static_444_islow_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-444-islow-prog-crop98x98_13_13" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-444-islow-prog-crop98x98_13_13" end time: Nov 15 03:29 CST
+"djpeg12-static-444-islow-prog-crop98x98_13_13" time elapsed: 00:00:00
+----------------------------------------------------------
+
+138/194 Testing: djpeg12-static-gray-islow-rgb
+138/194 Test: djpeg12-static-gray-islow-rgb
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb" "-outfile" "testout12-static_gray_islow_rgb.ppm" "testout12-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-gray-islow-rgb" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-gray-islow-rgb" end time: Nov 15 03:29 CST
+"djpeg12-static-gray-islow-rgb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/194 Testing: djpeg-static-rgb-islow-565D
+14/194 Test: djpeg-static-rgb-islow-565D
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-bmp" "-outfile" "testout-static_rgb_islow_565D.bmp" "testout-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-565D" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-565D" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-565D" time elapsed: 00:00:00
+----------------------------------------------------------
+
+124/194 Testing: djpeg12-static-440-islow
+124/194 Test: djpeg12-static-440-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-outfile" "testout12-static_440_islow.ppm" "testout12-static_440_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-440-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-440-islow" end time: Nov 15 03:29 CST
+"djpeg12-static-440-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/194 Testing: djpeg-static-420m-q100-ifast-prog
+34/194 Test: djpeg-static-420m-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-nosmooth" "-outfile" "testout-static_420m_q100_ifast.ppm" "testout-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-q100-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg-static-420m-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+170/194 Testing: djpeg12-static-420m-islow-1_4
+170/194 Test: djpeg12-static-420m-islow-1_4
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/4" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_1_4.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_4" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_4" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+156/194 Testing: djpeg12-static-420m-islow-11_8
+156/194 Test: djpeg12-static-420m-islow-11_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "11/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_11_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-11_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-11_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-11_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+78/194 Testing: djpeg-static-420m-islow-1_8
+78/194 Test: djpeg-static-420m-islow-1_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_1_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+64/194 Testing: djpeg-static-420m-islow-9_8
+64/194 Test: djpeg-static-420m-islow-9_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "9/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_9_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-9_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-9_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-9_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+92/194 Testing: djpeg-static-lossless
+92/194 Test: djpeg-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-fast" "-scale" "1/8" "-dct" "float" "-dither" "none" "-nosmooth" "-onepass" "-outfile" "testout-static_lossless.ppm" "testout-static_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-lossless" end time: Nov 15 03:29 CST
+"djpeg-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/194 Testing: djpeg-static-3x2-float-prog
+50/194 Test: djpeg-static-3x2-float-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "float" "-outfile" "testout-static_3x2_float.ppm" "testout-static_3x2_float_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-3x2-float-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-3x2-float-prog" end time: Nov 15 03:29 CST
+"djpeg-static-3x2-float-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+189/194 Testing: jpegtran12-static-crop
+189/194 Test: jpegtran12-static-crop
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/jpegtran-static" "-revert" "-crop" "120x90+20+50" "-transpose" "-perfect" "-outfile" "testout12-static_crop.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran12-static-crop" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran12-static-crop" end time: Nov 15 03:29 CST
+"jpegtran12-static-crop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+140/194 Testing: cjpeg12-static-420s-ifast-opt
+140/194 Test: cjpeg12-static-420s-ifast-opt
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/cjpeg-static" "-revert" "-sample" "2x2" "-smooth" "1" "-dct" "int" "-opt" "-precision" "12" "-outfile" "testout12-static_420s_ifast_opt.jpg" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-420s-ifast-opt" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-420s-ifast-opt" end time: Nov 15 03:29 CST
+"cjpeg12-static-420s-ifast-opt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+109/194 Testing: example-8bit-static-decompress
+109/194 Test: example-8bit-static-decompress
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/example-static" "decompress" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg" "testout-static-example.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-8bit-static-decompress" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-8bit-static-decompress" end time: Nov 15 03:29 CST
+"example-8bit-static-decompress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/194 Testing: djpeg16-static-lossless
+3/194 Test: djpeg16-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-fast" "-scale" "1/8" "-dct" "float" "-dither" "none" "-nosmooth" "-onepass" "-outfile" "testout16_lossless.ppm" "testout16_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg16-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg16-static-lossless" end time: Nov 15 03:29 CST
+"djpeg16-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/194 Testing: djpeg-static-gray-islow
+38/194 Test: djpeg-static-gray-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-outfile" "testout-static_gray_islow.ppm" "testout-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/194 Testing: djpeg-static-422-ifast
+18/194 Test: djpeg-static-422-ifast
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout-static_422_ifast.ppm" "testout-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422-ifast" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422-ifast" end time: Nov 15 03:29 CST
+"djpeg-static-422-ifast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+172/194 Testing: djpeg12-static-420m-islow-1_8
+172/194 Test: djpeg12-static-420m-islow-1_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "1/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_1_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+66/194 Testing: djpeg-static-420m-islow-7_8
+66/194 Test: djpeg-static-420m-islow-7_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "7/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_7_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-7_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-7_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-7_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+158/194 Testing: djpeg12-static-420m-islow-9_8
+158/194 Test: djpeg12-static-420m-islow-9_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "9/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_9_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-9_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-9_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-9_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+94/194 Testing: djpeg-static-420-islow-skip15_31
+94/194 Test: djpeg-static-420-islow-skip15_31
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-skip" "15,31" "-ppm" "-outfile" "testout-static_420_islow_skip15,31.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-skip15_31" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-skip15_31" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-skip15_31" time elapsed: 00:00:00
+----------------------------------------------------------
+
+126/194 Testing: djpeg12-static-422m-ifast
+126/194 Test: djpeg12-static-422m-ifast
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-nosmooth" "-outfile" "testout12-static_422m_ifast.ppm" "testout12-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-422m-ifast" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-422m-ifast" end time: Nov 15 03:29 CST
+"djpeg12-static-422m-ifast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/194 Testing: djpeg-static-3x2-ifast-prog
+54/194 Test: djpeg-static-3x2-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout-static_3x2_ifast.ppm" "testout-static_3x2_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-3x2-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-3x2-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg-static-3x2-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+144/194 Testing: djpeg12-static-3x2-float-prog
+144/194 Test: djpeg12-static-3x2-float-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "float" "-outfile" "testout12-static_3x2_float.ppm" "testout12-static_3x2_float_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-3x2-float-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-3x2-float-prog" end time: Nov 15 03:29 CST
+"djpeg12-static-3x2-float-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+113/194 Testing: djpeg12-static-rgb-islow
+113/194 Test: djpeg12-static-rgb-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-ppm" "-icc" "testout12-static_rgb_islow.icc" "-outfile" "testout12-static_rgb_islow.ppm" "testout12-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-rgb-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-rgb-islow" end time: Nov 15 03:29 CST
+"djpeg12-static-rgb-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/194 Testing: djpeg-static-440-islow
+22/194 Test: djpeg-static-440-islow
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-outfile" "testout-static_440_islow.ppm" "testout-static_440_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-440-islow" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-440-islow" end time: Nov 15 03:29 CST
+"djpeg-static-440-islow" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/194 Testing: djpeg-static-gray-islow-rgb
+40/194 Test: djpeg-static-gray-islow-rgb
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb" "-outfile" "testout-static_gray_islow_rgb.ppm" "testout-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-rgb" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-rgb" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-rgb" time elapsed: 00:00:00
+----------------------------------------------------------
+
+68/194 Testing: djpeg-static-420m-islow-3_4
+68/194 Test: djpeg-static-420m-islow-3_4
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "3/4" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_3_4.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-3_4" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-3_4" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-3_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+176/194 Testing: djpeg12-static-lossless
+176/194 Test: djpeg12-static-lossless
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-fast" "-scale" "1/8" "-dct" "float" "-dither" "none" "-nosmooth" "-onepass" "-outfile" "testout12-static_lossless.ppm" "testout12-static_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-lossless" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-lossless" end time: Nov 15 03:29 CST
+"djpeg12-static-lossless" time elapsed: 00:00:00
+----------------------------------------------------------
+
+160/194 Testing: djpeg12-static-420m-islow-7_8
+160/194 Test: djpeg12-static-420m-islow-7_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "7/8" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_7_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-7_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-7_8" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-7_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+97/194 Testing: djpeg-static-420-islow-prog-crop62x62_71_71
+97/194 Test: djpeg-static-420-islow-prog-crop62x62_71_71
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-crop" "62x62+71+71" "-ppm" "-outfile" "testout-static_420_islow_prog_crop62x62,71,71.ppm" "testout-static_420_islow_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-prog-crop62x62_71_71" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-prog-crop62x62_71_71" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-prog-crop62x62_71_71" time elapsed: 00:00:00
+----------------------------------------------------------
+
+56/194 Testing: djpeg-static-420m-islow-2_1
+56/194 Test: djpeg-static-420m-islow-2_1
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "2/1" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_2_1.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-2_1" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-2_1" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-2_1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+130/194 Testing: djpeg12-static-420-q100-ifast-prog
+130/194 Test: djpeg12-static-420-q100-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout12-static_420_q100_ifast.ppm" "testout12-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-q100-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-q100-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg12-static-420-q100-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+148/194 Testing: djpeg12-static-3x2-ifast-prog
+148/194 Test: djpeg12-static-3x2-ifast-prog
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-outfile" "testout12-static_3x2_ifast.ppm" "testout12-static_3x2_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-3x2-ifast-prog" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-3x2-ifast-prog" end time: Nov 15 03:29 CST
+"djpeg12-static-3x2-ifast-prog" time elapsed: 00:00:00
+----------------------------------------------------------
+
+82/194 Testing: djpeg-static-420-islow-565
+82/194 Test: djpeg-static-420-islow-565
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-dither" "none" "-bmp" "-outfile" "testout-static_420_islow_565.bmp" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-565" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-565" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-565" time elapsed: 00:00:00
+----------------------------------------------------------
+
+193/194 Testing: example-12bit-static-decompress
+193/194 Test: example-12bit-static-decompress
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/example-static" "decompress" "-precision" "12" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg" "testout12-static-example.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-12bit-static-decompress" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-12bit-static-decompress" end time: Nov 15 03:29 CST
+"example-12bit-static-decompress" time elapsed: 00:00:00
+----------------------------------------------------------
+
+70/194 Testing: djpeg-static-420m-islow-5_8
+70/194 Test: djpeg-static-420m-islow-5_8
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "5/8" "-nosmooth" "-ppm" "-outfile" "testout-static_420m_islow_5_8.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-5_8" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-5_8" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-5_8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/194 Testing: djpeg-static-422m-ifast
+24/194 Test: djpeg-static-422m-ifast
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "fast" "-nosmooth" "-outfile" "testout-static_422m_ifast.ppm" "testout-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast" time elapsed: 00:00:00
+----------------------------------------------------------
+
+178/194 Testing: djpeg12-static-420-islow-skip15_31
+178/194 Test: djpeg12-static-420-islow-skip15_31
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-skip" "15,31" "-ppm" "-outfile" "testout12-static_420_islow_skip15,31.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-islow-skip15_31" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-islow-skip15_31" end time: Nov 15 03:29 CST
+"djpeg12-static-420-islow-skip15_31" time elapsed: 00:00:00
+----------------------------------------------------------
+
+100/194 Testing: djpeg-static-444-islow-skip1_6
+100/194 Test: djpeg-static-444-islow-skip1_6
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-skip" "1,6" "-ppm" "-outfile" "testout-static_444_islow_skip1,6.ppm" "testout-static_444_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-444-islow-skip1_6" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-444-islow-skip1_6" end time: Nov 15 03:29 CST
+"djpeg-static-444-islow-skip1_6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+162/194 Testing: djpeg12-static-420m-islow-3_4
+162/194 Test: djpeg12-static-420m-islow-3_4
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-scale" "3/4" "-nosmooth" "-ppm" "-outfile" "testout12-static_420m_islow_3_4.ppm" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig12.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-3_4" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-3_4" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-3_4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+84/194 Testing: djpeg-static-420-islow-565D
+84/194 Test: djpeg-static-420-islow-565D
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/djpeg-static" "-dct" "int" "-rgb565" "-bmp" "-outfile" "testout-static_420_islow_565D.bmp" "/home/feedback/feedback/uidreczz28ZYi7IpASL/testimages/testorig.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-565D" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-565D" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-565D" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/194 Testing: djpeg-static-422m-ifast-565-cmp
+27/194 Test: djpeg-static-422m-ifast-565-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "3294bd4d9a1f2b3d08ea6020d0db7065" "testout-static_422m_ifast_565.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast-565-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_422m_ifast_565.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast-565-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast-565-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/194 Testing: djpeg-static-gray-islow-rgb-cmp
+41/194 Test: djpeg-static-gray-islow-rgb-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "116424ac07b79e5e801f00508eab48ec" "testout-static_gray_islow_rgb.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-rgb-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_gray_islow_rgb.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-rgb-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-rgb-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/194 Testing: djpeg-static-3x2-ifast-prog-cmp
+55/194 Test: djpeg-static-3x2-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "fd283664b3b49127984af0a7f118fccd" "testout-static_3x2_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-3x2-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_3x2_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-3x2-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-3x2-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+83/194 Testing: djpeg-static-420-islow-565-cmp
+83/194 Test: djpeg-static-420-islow-565-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "bf9d13e16c4923b92e1faa604d7922cb" "testout-static_420_islow_565.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-565-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_islow_565.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-565-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-565-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+69/194 Testing: djpeg-static-420m-islow-3_4-cmp
+69/194 Test: djpeg-static-420m-islow-3_4-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "8ed8e68808c3fbc4ea764fc9d2968646" "testout-static_420m_islow_3_4.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-3_4-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_3_4.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-3_4-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-3_4-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+125/194 Testing: djpeg12-static-440-islow-cmp
+125/194 Test: djpeg12-static-440-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "e7d2e26288870cfcb30f3114ad01e380" "testout12-static_440_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-440-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_440_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-440-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-440-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+151/194 Testing: djpeg12-static-420m-islow-2_1-cmp
+151/194 Test: djpeg12-static-420m-islow-2_1-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "4ca6be2a6f326ff9eaab63e70a8259c0" "testout12-static_420m_islow_2_1.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-2_1-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_2_1.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-2_1-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-2_1-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+165/194 Testing: djpeg12-static-420m-islow-5_8-cmp
+165/194 Test: djpeg12-static-420m-islow-5_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "a8a771abdc94301d20ffac119b2caccd" "testout12-static_420m_islow_5_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-5_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_5_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-5_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-5_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+112/194 Testing: cjpeg12-static-rgb-islow-cmp
+112/194 Test: cjpeg12-static-rgb-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "9d7369207c520d37f2c1cbfcb82b2964" "testout12-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-rgb-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_rgb_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-rgb-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-rgb-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+139/194 Testing: djpeg12-static-gray-islow-rgb-cmp
+139/194 Test: djpeg12-static-gray-islow-rgb-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "e96ee81c30a6ed422d466338bd3de65d" "testout12-static_gray_islow_rgb.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-gray-islow-rgb-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_gray_islow_rgb.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-gray-islow-rgb-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-gray-islow-rgb-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+98/194 Testing: djpeg-static-420-islow-prog-crop62x62_71_71-cmp
+98/194 Test: djpeg-static-420-islow-prog-crop62x62_71_71-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "26eb36ccc7d1f0cb80cdabb0ac8b5d99" "testout-static_420_islow_prog_crop62x62,71,71.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-prog-crop62x62_71_71-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_islow_prog_crop62x62,71,71.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-prog-crop62x62_71_71-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-prog-crop62x62_71_71-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/194 Testing: djpeg-static-422m-ifast-565D-cmp
+29/194 Test: djpeg-static-422m-ifast-565D-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "da98c9c7b6039511be4a79a878a9abc1" "testout-static_422m_ifast_565D.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast-565D-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_422m_ifast_565D.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast-565D-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast-565D-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/194 Testing: djpeg16-static-lossless-cmp
+4/194 Test: djpeg16-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "01d9642a2b8723fefebbe9cb074ccd02" "testout16_lossless.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg16-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout16_lossless.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg16-static-lossless-cmp" end time: Nov 15 03:29 CST
+"djpeg16-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+153/194 Testing: djpeg12-static-420m-islow-15_8-cmp
+153/194 Test: djpeg12-static-420m-islow-15_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "12aa9f9534c1b3d7ba047322226365eb" "testout12-static_420m_islow_15_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-15_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_15_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-15_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-15_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/194 Testing: djpeg-static-rgb-islow-565D-cmp
+15/194 Test: djpeg-static-rgb-islow-565D-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "4cfa0928ef3e6bb626d7728c924cfda4" "testout-static_rgb_islow_565D.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-565D-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow_565D.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-565D-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-565D-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+114/194 Testing: djpeg12-static-rgb-islow-cmp
+114/194 Test: djpeg12-static-rgb-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "f3301d2219783b8b3d942b7239fa50c0" "testout12-static_rgb_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-rgb-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_rgb_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-rgb-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-rgb-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+179/194 Testing: djpeg12-static-420-islow-skip15_31-cmp
+179/194 Test: djpeg12-static-420-islow-skip15_31-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "86664cd9dc956536409e44e244d20a97" "testout12-static_420_islow_skip15,31.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-islow-skip15_31-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420_islow_skip15,31.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-islow-skip15_31-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420-islow-skip15_31-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/194 Testing: djpeg-static-gray-islow-565-cmp
+43/194 Test: djpeg-static-gray-islow-565-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "12f78118e56a2f48b966f792fedf23cc" "testout-static_gray_islow_565.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-565-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_gray_islow_565.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-565-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-565-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+85/194 Testing: djpeg-static-420-islow-565D-cmp
+85/194 Test: djpeg-static-420-islow-565D-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "6bde71526acc44bcff76f696df8638d2" "testout-static_420_islow_565D.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-565D-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_islow_565D.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-565D-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-565D-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+57/194 Testing: djpeg-static-420m-islow-2_1-cmp
+57/194 Test: djpeg-static-420m-islow-2_1-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "9f9de8c0612f8d06869b960b05abf9c9" "testout-static_420m_islow_2_1.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-2_1-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_2_1.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-2_1-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-2_1-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+127/194 Testing: djpeg12-static-422m-ifast-cmp
+127/194 Test: djpeg12-static-422m-ifast-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "07737bfe8a7c1c87aaa393a0098d16b0" "testout12-static_422m_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-422m-ifast-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_422m_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-422m-ifast-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-422m-ifast-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+167/194 Testing: djpeg12-static-420m-islow-1_2-cmp
+167/194 Test: djpeg12-static-420m-islow-1_2-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b419124dd5568b085787234866102866" "testout12-static_420m_islow_1_2.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_2-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_1_2.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_2-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_2-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/194 Testing: cjpeg-static-420-q100-ifast-prog-cmp
+31/194 Test: cjpeg-static-420-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "0ba15f9dab81a703505f835f9dbbac6d" "testout-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-420-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_q100_ifast_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-420-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-420-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+71/194 Testing: djpeg-static-420m-islow-5_8-cmp
+71/194 Test: djpeg-static-420m-islow-5_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "a3363274999da2366a024efae6d16c9b" "testout-static_420m_islow_5_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-5_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_5_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-5_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-5_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+101/194 Testing: djpeg-static-444-islow-skip1_6-cmp
+101/194 Test: djpeg-static-444-islow-skip1_6-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "5606f86874cf26b8fcee1117a0a436a6" "testout-static_444_islow_skip1,6.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-444-islow-skip1_6-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_444_islow_skip1,6.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-444-islow-skip1_6-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-444-islow-skip1_6-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+141/194 Testing: cjpeg12-static-420s-ifast-opt-cmp
+141/194 Test: cjpeg12-static-420s-ifast-opt-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "7af8e60be4d9c227ec63ac9b6630855e" "testout12-static_420s_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-420s-ifast-opt-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420s_ifast_opt.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-420s-ifast-opt-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-420s-ifast-opt-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+87/194 Testing: djpeg-static-420m-islow-565-cmp
+87/194 Test: djpeg-static-420m-islow-565-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "8dc0185245353cfa32ad97027342216f" "testout-static_420m_islow_565.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-565-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_565.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-565-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-565-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/194 Testing: djpeg-static-gray-islow-565D-cmp
+45/194 Test: djpeg-static-gray-islow-565D-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "bdbbd616441a24354c98553df5dc82db" "testout-static_gray_islow_565D.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-565D-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_gray_islow_565D.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-565D-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-565D-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+59/194 Testing: djpeg-static-420m-islow-15_8-cmp
+59/194 Test: djpeg-static-420m-islow-15_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b6875bc070720b899566cc06459b63b7" "testout-static_420m_islow_15_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-15_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_15_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-15_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-15_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/194 Testing: cjpeg-static-422-ifast-opt-cmp
+17/194 Test: cjpeg-static-422-ifast-opt-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "2540287b79d913f91665e660303ab2c8" "testout-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-422-ifast-opt-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_422_ifast_opt.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-422-ifast-opt-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-422-ifast-opt-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+129/194 Testing: cjpeg12-static-420-q100-ifast-prog-cmp
+129/194 Test: cjpeg12-static-420-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "9447cef4803d9b0f74bcf333cc710a29" "testout12-static_420_q100_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-420-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420_q100_ifast_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-420-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-420-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+155/194 Testing: djpeg12-static-420m-islow-13_8-cmp
+155/194 Test: djpeg12-static-420m-islow-13_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "f7e22817c7b25e1393e4ec101e9d4e96" "testout12-static_420m_islow_13_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-13_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_13_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-13_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-13_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+73/194 Testing: djpeg-static-420m-islow-1_2-cmp
+73/194 Test: djpeg-static-420m-islow-1_2-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "e692a315cea26b988c8e8b29a5dbcd81" "testout-static_420m_islow_1_2.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_2-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_1_2.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_2-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_2-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/194 Testing: cjpeg-static-rgb-islow-cmp
+6/194 Test: cjpeg-static-rgb-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "1d44a406f61da743b5fd31c0a9abdca3" "testout-static_rgb_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-rgb-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-rgb-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-rgb-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+169/194 Testing: djpeg12-static-420m-islow-3_8-cmp
+169/194 Test: djpeg12-static-420m-islow-3_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "343d19015531b7bbe746124127244fa8" "testout12-static_420m_islow_3_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-3_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_3_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-3_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-3_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+115/194 Testing: djpeg12-static-rgb-islow-icc-cmp
+115/194 Test: djpeg12-static-rgb-islow-icc-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b06a39d730129122e85c1363ed1bbc9e" "testout12-static_rgb_islow.icc"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-rgb-islow-icc-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_rgb_islow.icc: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-rgb-islow-icc-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-rgb-islow-icc-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+182/194 Testing: djpeg12-static-420-islow-prog-crop62x62_71_71-cmp
+182/194 Test: djpeg12-static-420-islow-prog-crop62x62_71_71-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "452a21656115a163029cfba5c04fa76a" "testout12-static_420_islow_prog_crop62x62,71,71.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-islow-prog-crop62x62_71_71-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420_islow_prog_crop62x62,71,71.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-islow-prog-crop62x62_71_71-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420-islow-prog-crop62x62_71_71-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+104/194 Testing: djpeg-static-444-islow-prog-crop98x98_13_13-cmp
+104/194 Test: djpeg-static-444-islow-prog-crop98x98_13_13-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "db87dc7ce26bcdc7a6b56239ce2b9d6c" "testout-static_444_islow_prog_crop98x98,13,13.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-444-islow-prog-crop98x98_13_13-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_444_islow_prog_crop98x98,13,13.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-444-islow-prog-crop98x98_13_13-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-444-islow-prog-crop98x98_13_13-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+143/194 Testing: cjpeg12-static-3x2-float-prog-cmp
+143/194 Test: cjpeg12-static-3x2-float-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "a8c17daf77b457725ec929e215b603f8" "testout12-static_3x2_float_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-3x2-float-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_3x2_float_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-3x2-float-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-3x2-float-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+89/194 Testing: djpeg-static-420m-islow-565D-cmp
+89/194 Test: djpeg-static-420m-islow-565D-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "ce034037d212bc403330df6f915c161b" "testout-static_420m_islow_565D.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-565D-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_565D.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-565D-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-565D-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/194 Testing: cjpeg-static-420s-ifast-opt-cmp
+47/194 Test: cjpeg-static-420s-ifast-opt-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "388708217ac46273ca33086b22827ed8" "testout-static_420s_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-420s-ifast-opt-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420s_ifast_opt.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-420s-ifast-opt-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-420s-ifast-opt-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/194 Testing: djpeg-static-420-q100-ifast-prog-cmp
+33/194 Test: djpeg-static-420-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "5a732542015c278ff43635e473a8a294" "testout-static_420_q100_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_q100_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+61/194 Testing: djpeg-static-420m-islow-13_8-cmp
+61/194 Test: djpeg-static-420m-islow-13_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "bc3452573c8152f6ae552939ee19f82f" "testout-static_420m_islow_13_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-13_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_13_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-13_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-13_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/194 Testing: djpeg-static-422-ifast-cmp
+19/194 Test: djpeg-static-422-ifast-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "35bd6b3f833bad23de82acea847129fa" "testout-static_422_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422-ifast-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_422_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422-ifast-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-422-ifast-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+157/194 Testing: djpeg12-static-420m-islow-11_8-cmp
+157/194 Test: djpeg12-static-420m-islow-11_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "800a16f9f4dc9b293197bfe11be10a82" "testout12-static_420m_islow_11_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-11_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_11_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-11_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-11_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+131/194 Testing: djpeg12-static-420-q100-ifast-prog-cmp
+131/194 Test: djpeg12-static-420-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "1b3730122709f53d007255e8dfd3305e" "testout12-static_420_q100_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420_q100_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/194 Testing: djpeg-static-rgb-islow-cmp
+8/194 Test: djpeg-static-rgb-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "00a257f5393fef8821f2b88ac7421291" "testout-static_rgb_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+75/194 Testing: djpeg-static-420m-islow-3_8-cmp
+75/194 Test: djpeg-static-420m-islow-3_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "79eca9175652ced755155c90e785a996" "testout-static_420m_islow_3_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-3_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_3_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-3_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-3_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+117/194 Testing: jpegtran12-static-icc-cmp
+117/194 Test: jpegtran12-static-icc-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "e619791332a99813bdca9f56fd60f9f9" "testout12-static_rgb_islow2.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran12-static-icc-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_rgb_islow2.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran12-static-icc-cmp" end time: Nov 15 03:29 CST
+"jpegtran12-static-icc-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+171/194 Testing: djpeg12-static-420m-islow-1_4-cmp
+171/194 Test: djpeg12-static-420m-islow-1_4-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "35fd59d866e44659edfa3c18db2a3edb" "testout12-static_420m_islow_1_4.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_4-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_1_4.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_4-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_4-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+185/194 Testing: djpeg12-static-444-islow-skip1_6-cmp
+185/194 Test: djpeg12-static-444-islow-skip1_6-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "ef63901f71ef7a75cd78253fc0914f84" "testout12-static_444_islow_skip1,6.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-444-islow-skip1_6-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_444_islow_skip1,6.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-444-islow-skip1_6-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-444-islow-skip1_6-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+106/194 Testing: jpegtran-static-crop-cmp
+106/194 Test: jpegtran-static-crop-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b4197f377e621c4e9b1d20471432610d" "testout-static_crop.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran-static-crop-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_crop.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran-static-crop-cmp" end time: Nov 15 03:29 CST
+"jpegtran-static-crop-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+145/194 Testing: djpeg12-static-3x2-float-prog-cmp
+145/194 Test: djpeg12-static-3x2-float-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "42876ab9e5c2f76a87d08db5fbd57956" "testout12-static_3x2_float.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-3x2-float-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_3x2_float.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-3x2-float-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-3x2-float-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/194 Testing: djpeg-static-420m-q100-ifast-prog-cmp
+35/194 Test: djpeg-static-420m-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "ff692ee9323a3b424894862557c092f1" "testout-static_420m_q100_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_q100_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+63/194 Testing: djpeg-static-420m-islow-11_8-cmp
+63/194 Test: djpeg-static-420m-islow-11_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "d8cc73c0aaacd4556569b59437ba00a5" "testout-static_420m_islow_11_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-11_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_11_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-11_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-11_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/194 Testing: cjpeg-static-3x2-float-prog-cmp
+49/194 Test: cjpeg-static-3x2-float-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "9bca803d2042bd1eb03819e2bf92b3e5" "testout-static_3x2_float_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-3x2-float-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_3x2_float_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-3x2-float-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-3x2-float-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/194 Testing: cjpeg-static-440-islow-cmp
+21/194 Test: cjpeg-static-440-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "538bc02bd4b4658fd85de6ece6cbeda6" "testout-static_440_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-440-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_440_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-440-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-440-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+133/194 Testing: djpeg12-static-420m-q100-ifast-prog-cmp
+133/194 Test: djpeg12-static-420m-q100-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "980a1a3c5bf9510022869d30b7d26566" "testout12-static_420m_q100_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-q100-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_q100_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-q100-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-q100-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+91/194 Testing: cjpeg-static-lossless-cmp
+91/194 Test: cjpeg-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "fc777b82d42d835ae1282ba1ee87c209" "testout-static_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_lossless.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-lossless-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+159/194 Testing: djpeg12-static-420m-islow-9_8-cmp
+159/194 Test: djpeg12-static-420m-islow-9_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "06b7a92a9bc69f4dc36ec40f1937d55c" "testout12-static_420m_islow_9_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-9_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_9_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-9_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-9_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/194 Testing: djpeg-static-rgb-islow-icc-cmp
+9/194 Test: djpeg-static-rgb-islow-icc-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b06a39d730129122e85c1363ed1bbc9e" "testout-static_rgb_islow.icc"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-icc-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow.icc: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-icc-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-icc-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+188/194 Testing: djpeg12-static-444-islow-prog-crop98x98_13_13-cmp
+188/194 Test: djpeg12-static-444-islow-prog-crop98x98_13_13-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "15b173fb5872d9575572fbcc1b05956f" "testout12-static_444_islow_prog_crop98x98,13,13.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-444-islow-prog-crop98x98_13_13-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_444_islow_prog_crop98x98,13,13.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-444-islow-prog-crop98x98_13_13-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-444-islow-prog-crop98x98_13_13-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+119/194 Testing: cjpeg12-static-422-ifast-opt-cmp
+119/194 Test: cjpeg12-static-422-ifast-opt-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "7322e3bd2f127f7de4b40d4480ce60e4" "testout12-static_422_ifast_opt.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-422-ifast-opt-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_422_ifast_opt.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-422-ifast-opt-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-422-ifast-opt-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+147/194 Testing: cjpeg12-static-3x2-ifast-prog-cmp
+147/194 Test: cjpeg12-static-3x2-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "1396cc2b7185cfe943d408c9d305339e" "testout12-static_3x2_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-3x2-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_3x2_ifast_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-3x2-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-3x2-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+77/194 Testing: djpeg-static-420m-islow-1_4-cmp
+77/194 Test: djpeg-static-420m-islow-1_4-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "79cd778f8bf1a117690052cacdd54eca" "testout-static_420m_islow_1_4.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_4-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_1_4.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_4-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_4-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+173/194 Testing: djpeg12-static-420m-islow-1_8-cmp
+173/194 Test: djpeg12-static-420m-islow-1_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "ccaed48ac0aedefda5d4abe4013f4ad7" "testout12-static_420m_islow_1_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-1_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_1_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-1_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-1_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+108/194 Testing: example-8bit-static-compress-cmp
+108/194 Test: example-8bit-static-compress-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "95d4d72e2ef127332654c2599afb47bf" "testout-static-example.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-8bit-static-compress-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static-example.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-8bit-static-compress-cmp" end time: Nov 15 03:29 CST
+"example-8bit-static-compress-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/194 Testing: cjpeg-static-gray-islow-cmp
+37/194 Test: cjpeg-static-gray-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "72b51f894b8f4a10b3ee3066770aa38d" "testout-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-gray-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_gray_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-gray-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-gray-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+65/194 Testing: djpeg-static-420m-islow-9_8-cmp
+65/194 Test: djpeg-static-420m-islow-9_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "d25e61bc7eac0002f5b393aa223747b6" "testout-static_420m_islow_9_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-9_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_9_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-9_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-9_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/194 Testing: djpeg-static-440-islow-cmp
+23/194 Test: djpeg-static-440-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "11e7eab7ef7ef3276934bb7e7b6bb377" "testout-static_440_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-440-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_440_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-440-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-440-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/194 Testing: djpeg-static-3x2-float-prog-cmp
+51/194 Test: djpeg-static-3x2-float-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "f6bfab038438ed8f5522fbd33595dcdc" "testout-static_3x2_float.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-3x2-float-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_3x2_float.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-3x2-float-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-3x2-float-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+135/194 Testing: cjpeg12-static-gray-islow-cmp
+135/194 Test: cjpeg12-static-gray-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "235c90707b16e2e069f37c888b2636d9" "testout12-static_gray_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-gray-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_gray_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-gray-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-gray-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/194 Testing: jpegtran-static-icc-cmp
+11/194 Test: jpegtran-static-icc-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "b811e5ad807beb9384e51ef6a47f715d" "testout-static_rgb_islow2.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran-static-icc-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow2.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran-static-icc-cmp" end time: Nov 15 03:29 CST
+"jpegtran-static-icc-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+149/194 Testing: djpeg12-static-3x2-ifast-prog-cmp
+149/194 Test: djpeg12-static-3x2-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "3975985ef6eeb0a2cdc58daa651ccc00" "testout12-static_3x2_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-3x2-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_3x2_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-3x2-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-3x2-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+93/194 Testing: djpeg-static-lossless-cmp
+93/194 Test: djpeg-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "64072f1dbdc5b3a187777788604971a5" "testout-static_lossless.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_lossless.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-lossless-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+110/194 Testing: example-8bit-static-decompress-cmp
+110/194 Test: example-8bit-static-decompress-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "dea1d7bbc37e39adf628342c86096641" "testout-static-example.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-8bit-static-decompress-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static-example.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-8bit-static-decompress-cmp" end time: Nov 15 03:29 CST
+"example-8bit-static-decompress-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+121/194 Testing: djpeg12-static-422-ifast-cmp
+121/194 Test: djpeg12-static-422-ifast-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "79807fa552899e66a04708f533e16950" "testout12-static_422_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-422-ifast-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_422_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-422-ifast-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-422-ifast-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+161/194 Testing: djpeg12-static-420m-islow-7_8-cmp
+161/194 Test: djpeg12-static-420m-islow-7_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "3ec444a14a4ab4eab88ffc49c48eca43" "testout12-static_420m_islow_7_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-7_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_7_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-7_8-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-7_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+175/194 Testing: cjpeg12-static-lossless-cmp
+175/194 Test: cjpeg12-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "8473501f5bb7c826524472c858bf4fcd" "testout12-static_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_lossless.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-lossless-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+79/194 Testing: djpeg-static-420m-islow-1_8-cmp
+79/194 Test: djpeg-static-420m-islow-1_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "391b3d4aca640c8567d6f8745eb2142f" "testout-static_420m_islow_1_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-1_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_1_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-1_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-1_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+190/194 Testing: jpegtran12-static-crop-cmp
+190/194 Test: jpegtran12-static-crop-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "cdb35ff4b4519392690ea040c56ea99c" "testout12-static_crop.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"jpegtran12-static-crop-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_crop.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"jpegtran12-static-crop-cmp" end time: Nov 15 03:29 CST
+"jpegtran12-static-crop-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/194 Testing: djpeg-static-gray-islow-cmp
+39/194 Test: djpeg-static-gray-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "8d3596c56eace32f205deccc229aa5ed" "testout-static_gray_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-gray-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_gray_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-gray-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-gray-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/194 Testing: cjpeg-static-3x2-ifast-prog-cmp
+53/194 Test: cjpeg-static-3x2-ifast-prog-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "1ee5d2c1a77f2da495f993c8c7cceca5" "testout-static_3x2_ifast_prog.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg-static-3x2-ifast-prog-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_3x2_ifast_prog.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg-static-3x2-ifast-prog-cmp" end time: Nov 15 03:29 CST
+"cjpeg-static-3x2-ifast-prog-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+67/194 Testing: djpeg-static-420m-islow-7_8-cmp
+67/194 Test: djpeg-static-420m-islow-7_8-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "ddb564b7c74a09494016d6cd7502a946" "testout-static_420m_islow_7_8.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420m-islow-7_8-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420m_islow_7_8.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420m-islow-7_8-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420m-islow-7_8-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/194 Testing: djpeg-static-422m-ifast-cmp
+25/194 Test: djpeg-static-422m-ifast-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "8dbc65323d62cca7c91ba02dd1cfa81d" "testout-static_422m_ifast.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-422m-ifast-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_422m_ifast.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-422m-ifast-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-422m-ifast-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/194 Testing: cjpeg16-static-lossless-cmp
+2/194 Test: cjpeg16-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "fe99437df4e9976fe5e841969242b208" "testout16_lossless.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg16-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout16_lossless.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg16-static-lossless-cmp" end time: Nov 15 03:29 CST
+"cjpeg16-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+137/194 Testing: djpeg12-static-gray-islow-cmp
+137/194 Test: djpeg12-static-gray-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "7213c10af507ad467da5578ca5ee1fca" "testout12-static_gray_islow.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-gray-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_gray_islow.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-gray-islow-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-gray-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/194 Testing: djpeg-static-rgb-islow-565-cmp
+13/194 Test: djpeg-static-rgb-islow-565-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "f07d2e75073e4bb10f6c6f4d36e2e3be" "testout-static_rgb_islow_565.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-rgb-islow-565-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_rgb_islow_565.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-rgb-islow-565-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-rgb-islow-565-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+177/194 Testing: djpeg12-static-lossless-cmp
+177/194 Test: djpeg12-static-lossless-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "1da3fb2620e5a4e258e0fcb891bc67e8" "testout12-static_lossless.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-lossless-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_lossless.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-lossless-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-lossless-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+81/194 Testing: djpeg-static-420-islow-256-cmp
+81/194 Test: djpeg-static-420-islow-256-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "4980185e3776e89bd931736e1cddeee6" "testout-static_420_islow_256.bmp"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-256-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_islow_256.bmp: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-256-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-256-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+95/194 Testing: djpeg-static-420-islow-skip15_31-cmp
+95/194 Test: djpeg-static-420-islow-skip15_31-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "c4c65c1e43d7275cd50328a61e6534f0" "testout-static_420_islow_skip15,31.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg-static-420-islow-skip15_31-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout-static_420_islow_skip15,31.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg-static-420-islow-skip15_31-cmp" end time: Nov 15 03:29 CST
+"djpeg-static-420-islow-skip15_31-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+163/194 Testing: djpeg12-static-420m-islow-3_4-cmp
+163/194 Test: djpeg12-static-420m-islow-3_4-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "3e726b7ea872445b19437d1c1d4f0d93" "testout12-static_420m_islow_3_4.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"djpeg12-static-420m-islow-3_4-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_420m_islow_3_4.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"djpeg12-static-420m-islow-3_4-cmp" end time: Nov 15 03:29 CST
+"djpeg12-static-420m-islow-3_4-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+123/194 Testing: cjpeg12-static-440-islow-cmp
+123/194 Test: cjpeg12-static-440-islow-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "e25c1912e38367be505a89c410c1c2d2" "testout12-static_440_islow.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"cjpeg12-static-440-islow-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static_440_islow.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"cjpeg12-static-440-islow-cmp" end time: Nov 15 03:29 CST
+"cjpeg12-static-440-islow-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+192/194 Testing: example-12bit-static-compress-cmp
+192/194 Test: example-12bit-static-compress-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "5e502da0c3c0f957a58c536f31e973dc" "testout12-static-example.jpg"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-12bit-static-compress-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static-example.jpg: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-12bit-static-compress-cmp" end time: Nov 15 03:29 CST
+"example-12bit-static-compress-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+194/194 Testing: example-12bit-static-decompress-cmp
+194/194 Test: example-12bit-static-decompress-cmp
+Command: "/home/feedback/feedback/uidreczz28ZYi7IpASL/build-static/md5/md5cmp" "70194fdcb73370ee7ba0db868d0c6fc8" "testout12-static-example.ppm"
+Directory: /home/feedback/feedback/uidreczz28ZYi7IpASL/build-static
+"example-12bit-static-decompress-cmp" start time: Nov 15 03:29 CST
+Output:
+----------------------------------------------------------
+testout12-static-example.ppm: OK
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"example-12bit-static-decompress-cmp" end time: Nov 15 03:29 CST
+"example-12bit-static-decompress-cmp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 15 03:29 CST

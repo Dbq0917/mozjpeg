@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/feedback/feedback/uidreczz28ZYi7IpASL/build/cmake_install.cmake",
+		"/home/feedback/feedback/uidreczz28ZYi7IpASL/build/simd/cmake_install.cmake",
+		"/home/feedback/feedback/uidreczz28ZYi7IpASL/build/sharedlib/cmake_install.cmake",
+		"/home/feedback/feedback/uidreczz28ZYi7IpASL/build/md5/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

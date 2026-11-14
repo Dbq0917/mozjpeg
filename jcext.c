@@ -185,7 +185,7 @@ jpeg_c_set_int_param (j_compress_ptr cinfo, J_INT_PARAM param, int value)
     cinfo->master->trellis_num_loops = value;
     break;
   case JINT_BASE_QUANT_TBL_IDX:
-    if (value >= 0 && value <= 8)
+    if (value >= 0 && value <= 9)
       cinfo->master->quant_tbl_master_idx = value;
     break;
   case JINT_DC_SCAN_OPT_MODE:

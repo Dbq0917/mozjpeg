@@ -1,0 +1,10 @@
+prefix=/opt/mozjpeg
+exec_prefix=/opt/mozjpeg
+libdir=/opt/mozjpeg/lib64
+includedir=/opt/mozjpeg/include
+
+Name: libjpeg
+Description: A SIMD-accelerated JPEG codec that provides the libjpeg API
+Version: 5.0.0
+Libs: -L${libdir} -ljpeg
+Cflags: -I${includedir}

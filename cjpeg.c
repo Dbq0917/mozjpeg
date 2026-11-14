@@ -34,6 +34,9 @@
 #define _CRT_SECURE_NO_DEPRECATE
 #endif
 
+#include <limits.h>
+#include <math.h>
+
 #ifdef CJPEG_FUZZER
 #define JPEG_INTERNALS
 #endif
@@ -170,6 +173,33 @@ static char *outfilename;       /* for -outfile switch */
 static boolean memdst;          /* for -memdst switch */
 static boolean report;          /* for -report switch */
 static boolean strict;          /* for -strict switch */
+static unsigned long max_output_size; /* for -maxsize switch, 0 = disabled */
+static boolean force_baseline_output;
+
+#define TARGET_QUANT_TABLE 9
+
+
+LOCAL(unsigned long)
+parse_size_arg(const char *arg)
+{
+  char suffix = 0;
+  double value;
+
+  if (sscanf(arg, "%lf%c", &value, &suffix) < 1 || value <= 0.0)
+    return 0;
+
+  if (suffix == 'k' || suffix == 'K')
+    value *= 1024.0;
+  else if (suffix == 'm' || suffix == 'M')
+    value *= 1024.0 * 1024.0;
+  else if (suffix != 0 && suffix != 'b' && suffix != 'B')
+    return 0;
+
+  if (value > (double)ULONG_MAX)
+    return 0;
+
+  return (unsigned long)(value + 0.5);
+}
 
 
 #ifdef CJPEG_FUZZER
@@ -225,6 +255,7 @@ usage(void)
   fprintf(stderr, "Switches (names may be abbreviated):\n");
   fprintf(stderr, "  -quality N[,...]   Compression quality (0..100; 5-95 is most useful range,\n");
   fprintf(stderr, "                     default is 75)\n");
+  fprintf(stderr, "  -maxsize N     Limit the output to N bytes (K and M suffixes are accepted)\n");
   fprintf(stderr, "  -grayscale     Create monochrome JPEG file\n");
   fprintf(stderr, "  -rgb           Create RGB JPEG file\n");
 #ifdef ENTROPY_OPT_SUPPORTED
@@ -290,6 +321,7 @@ usage(void)
   fprintf(stderr, "                 - 6 Table from paper by Watson, Taylor and Borthwick\n");
   fprintf(stderr, "                 - 7 Table from paper by Ahumada, Watson, Peterson\n");
   fprintf(stderr, "                 - 8 Table from paper by Peterson, Ahumada and Watson\n");
+  fprintf(stderr, "                 - 9 Skin/edge-preserving table (used by -maxsize)\n");
   fprintf(stderr, "  -icc FILE      Embed ICC profile contained in FILE\n");
   fprintf(stderr, "  -restart N     Set restart interval in rows, or in blocks with B\n");
 #ifdef INPUT_SMOOTHING_SUPPORTED
@@ -352,6 +384,8 @@ parse_switches(j_compress_ptr cinfo, int argc, char **argv,
   memdst = FALSE;
   report = FALSE;
   strict = FALSE;
+  max_output_size = 0;
+  force_baseline_output = FALSE;
   cinfo->err->trace_level = 0;
 
   /* Scan command line options, adjust parameters */
@@ -384,6 +418,7 @@ parse_switches(j_compress_ptr cinfo, int argc, char **argv,
     } else if (keymatch(arg, "baseline", 1)) {
       /* Force baseline-compatible output (8-bit quantizer values). */
       force_baseline = TRUE;
+      force_baseline_output = TRUE;
       /* Disable multiple scans */
       simple_progressive = FALSE;
       cinfo->num_scans = 0;
@@ -491,6 +526,20 @@ parse_switches(j_compress_ptr cinfo, int argc, char **argv,
         lval *= 1000L;
       cinfo->mem->max_memory_to_use = lval * 1000L;
 
+    } else if (keymatch(arg, "maxsize", 4) ||
+               keymatch(arg, "max-size", 4) ||
+               keymatch(arg, "targetsize", 7) ||
+               keymatch(arg, "target-size", 7)) {
+      if (++argn >= argc) {
+        fprintf(stderr, "%s: missing argument for maxsize\n", progname);
+        usage();
+      }
+      max_output_size = parse_size_arg(argv[argn]);
+      if (max_output_size == 0) {
+        fprintf(stderr, "%s: invalid argument for maxsize\n", progname);
+        usage();
+      }
+
     } else if (keymatch(arg, "dc-scan-opt", 3)) {
       if (++argn >= argc) {      /* advance to next argument */
         fprintf(stderr, "%s: missing argument for dc-scan-opt\n", progname);
@@ -589,6 +638,7 @@ parse_switches(j_compress_ptr cinfo, int argc, char **argv,
     } else if (keymatch(arg, "quant-baseline", 7)) {
       /* Force quantization table to meet baseline requirements */
       force_baseline = TRUE;
+      force_baseline_output = TRUE;
 
     } else if (keymatch(arg, "restart", 1)) {
       /* Restart interval in MCU rows (or in MCUs with 'b'). */
@@ -778,6 +828,238 @@ my_emit_message(j_common_ptr cinfo, int msg_level)
 }
 
 
+LOCAL(int)
+estimate_target_quality(unsigned long target_size, JDIMENSION width,
+                        JDIMENSION height)
+{
+  const double anchor_pixels = 512.0 * 768.0;
+  const double anchor_bpp = 20000.0 * 8.0 / anchor_pixels;
+  double pixels = (double)width * (double)height;
+  double bpp;
+  double quality;
+
+  if (pixels <= 0.0)
+    return 75;
+
+  bpp = (double)target_size * 8.0 / pixels;
+  if (bpp <= 0.0)
+    return 1;
+
+  /* This is only the first-pass estimate.  If the source is unusually
+   * detailed, the caller performs one corrective pass.  Chroma gets more
+   * bits than luma at the low rates this mode is normally used for.
+   */
+  quality = 18.0 + 15.0 * log(bpp / anchor_bpp) / log(2.0) +
+            4.5 * log(pixels / anchor_pixels) / log(2.0);
+
+  if (quality < 1.0)
+    quality = 1.0;
+  if (quality > 95.0)
+    quality = 95.0;
+
+  return (int)(quality + 0.5);
+}
+
+
+LOCAL(int)
+adjust_quality_for_size(int quality, unsigned long actual_size,
+                        unsigned long target_size)
+{
+  const double overhead = 1024.0;
+  double payload = (double)actual_size - overhead;
+  double budget = (double)target_size - overhead;
+  double ratio;
+  int adjusted;
+
+  if (payload <= 0.0 || budget <= 0.0)
+    return 1;
+
+  ratio = budget / payload;
+  /* Back off a little more aggressively than a linear fit.  JPEG size
+   * falls faster than quality at the low end, so this keeps the correction
+   * pass under the hard limit instead of requiring a third full encode.
+   */
+  adjusted = (int)((double)quality * pow(ratio, 1.1) * 0.95);
+  if (adjusted >= quality)
+    adjusted = quality - 1;
+  if (adjusted < 1)
+    adjusted = 1;
+  return adjusted;
+}
+
+
+LOCAL(int)
+adjust_quality_up_for_size(int quality, unsigned long actual_size,
+                           unsigned long target_size)
+{
+  double ratio;
+  int adjusted;
+
+  if (actual_size == 0 || target_size <= actual_size)
+    return quality;
+
+  ratio = (double)target_size / (double)actual_size;
+  adjusted = (int)((double)quality * pow(ratio, 0.9) * 0.87 +
+                   2.0 * log(ratio) / log(2.0));
+  if (adjusted <= quality)
+    return quality;
+  if (adjusted > 98)
+    adjusted = 98;
+  return adjusted;
+}
+
+
+LOCAL(FILE *)
+make_seekable_input(FILE *input_file)
+{
+  FILE *temp_file;
+  unsigned char buffer[4096];
+  size_t bytes_read;
+
+  if (fseek(input_file, 0, SEEK_SET) == 0)
+    return input_file;
+  clearerr(input_file);
+
+  temp_file = tmpfile();
+  if (temp_file == NULL)
+    return NULL;
+
+  while ((bytes_read = fread(buffer, 1, sizeof(buffer), input_file)) > 0) {
+    if (fwrite(buffer, 1, bytes_read, temp_file) != bytes_read) {
+      fclose(temp_file);
+      return NULL;
+    }
+  }
+  if (ferror(input_file)) {
+    fclose(temp_file);
+    return NULL;
+  }
+  rewind(temp_file);
+  return temp_file;
+}
+
+
+LOCAL(unsigned char *)
+encode_pass(j_compress_ptr cinfo, FILE *input_file, FILE *output_file,
+            int argc, char **argv, JOCTET *icc_profile, long icc_len,
+            int requested_quality, int *quality_used,
+            unsigned long *outsize)
+{
+  cjpeg_source_ptr src_mgr;
+  JDIMENSION num_scanlines;
+  unsigned char *outbuffer = NULL;
+  boolean to_memory = memdst || max_output_size > 0;
+  int quality = requested_quality;
+  int file_index;
+
+  *outsize = 0;
+  rewind(input_file);
+  clearerr(input_file);
+
+  jpeg_set_defaults(cinfo);
+  file_index = parse_switches(cinfo, argc, argv, 0, FALSE);
+  (void)file_index;
+
+  src_mgr = select_file_type(cinfo, input_file);
+  src_mgr->input_file = input_file;
+#ifdef CJPEG_FUZZER
+  src_mgr->max_pixels = 1048576;
+#endif
+
+  (*src_mgr->start_input) (cinfo, src_mgr);
+
+#if JPEG_RAW_READER
+  if (!is_jpeg)
+#endif
+    jpeg_default_colorspace(cinfo);
+
+  file_index = parse_switches(cinfo, argc, argv, 0, TRUE);
+  (void)file_index;
+
+  if (max_output_size > 0) {
+    if (cinfo->data_precision != 8)
+      ERREXIT1(cinfo, JERR_BAD_PRECISION, cinfo->data_precision);
+
+    if (quality <= 0)
+      quality = estimate_target_quality(max_output_size, cinfo->image_width,
+                                        cinfo->image_height);
+
+    jpeg_c_set_int_param(cinfo, JINT_BASE_QUANT_TBL_IDX,
+                         TARGET_QUANT_TABLE);
+    jpeg_set_quality(cinfo, quality, force_baseline_output);
+  }
+  if (quality_used != NULL)
+    *quality_used = quality;
+
+  if (to_memory)
+    jpeg_mem_dest(cinfo, &outbuffer, outsize);
+  else
+    jpeg_stdio_dest(cinfo, output_file);
+
+  jpeg_start_compress(cinfo, TRUE);
+
+  if (copy_markers) {
+    jpeg_saved_marker_ptr marker;
+
+    for (marker = src_mgr->marker_list; marker != NULL; marker = marker->next) {
+      if (cinfo->write_JFIF_header &&
+          marker->marker == JPEG_APP0 &&
+          marker->data_length >= 5 &&
+          GETJOCTET(marker->data[0]) == 0x4A &&
+          GETJOCTET(marker->data[1]) == 0x46 &&
+          GETJOCTET(marker->data[2]) == 0x49 &&
+          GETJOCTET(marker->data[3]) == 0x46 &&
+          GETJOCTET(marker->data[4]) == 0)
+        continue;
+      if (cinfo->write_Adobe_marker &&
+          marker->marker == JPEG_APP0 + 14 &&
+          marker->data_length >= 5 &&
+          GETJOCTET(marker->data[0]) == 0x41 &&
+          GETJOCTET(marker->data[1]) == 0x64 &&
+          GETJOCTET(marker->data[2]) == 0x6F &&
+          GETJOCTET(marker->data[3]) == 0x62 &&
+          GETJOCTET(marker->data[4]) == 0x65)
+        continue;
+      jpeg_write_marker(cinfo, marker->marker, marker->data,
+                        marker->data_length);
+    }
+  }
+  if (icc_profile != NULL)
+    jpeg_write_icc_profile(cinfo, icc_profile, (unsigned int)icc_len);
+
+  if (cinfo->data_precision == 16) {
+#ifdef C_LOSSLESS_SUPPORTED
+    while (cinfo->next_scanline < cinfo->image_height) {
+      num_scanlines = (*src_mgr->get_pixel_rows) (cinfo, src_mgr);
+      (void)jpeg16_write_scanlines(cinfo, src_mgr->buffer16, num_scanlines);
+    }
+#else
+    ERREXIT1(cinfo, JERR_BAD_PRECISION, cinfo->data_precision);
+#endif
+  } else if (cinfo->data_precision == 12) {
+    while (cinfo->next_scanline < cinfo->image_height) {
+      num_scanlines = (*src_mgr->get_pixel_rows) (cinfo, src_mgr);
+      (void)jpeg12_write_scanlines(cinfo, src_mgr->buffer12, num_scanlines);
+    }
+  } else {
+    while (cinfo->next_scanline < cinfo->image_height) {
+      num_scanlines = (*src_mgr->get_pixel_rows) (cinfo, src_mgr);
+#if JPEG_RAW_READER
+      if (is_jpeg)
+        (void)jpeg_write_raw_data(cinfo, src_mgr->plane_pointer, num_scanlines);
+      else
+#endif
+        (void)jpeg_write_scanlines(cinfo, src_mgr->buffer, num_scanlines);
+    }
+  }
+
+  (*src_mgr->finish_input) (cinfo, src_mgr);
+  jpeg_finish_compress(cinfo);
+
+  return outbuffer;
+}
+
+
 /*
  * The main program.
  */
@@ -794,15 +1076,18 @@ main(int argc, char **argv)
 #endif
   struct cdjpeg_progress_mgr progress;
   int file_index;
-  cjpeg_source_ptr src_mgr;
   FILE *input_file = NULL;
+  FILE *temp_input_file = NULL;
   FILE *icc_file;
   JOCTET *icc_profile = NULL;
   long icc_len = 0;
   FILE *output_file = NULL;
   unsigned char *outbuffer = NULL;
+  unsigned char *first_outbuffer = NULL;
   unsigned long outsize = 0;
-  JDIMENSION num_scanlines;
+  unsigned long first_outsize = 0;
+  int first_quality = 0;
+  int quality = 0;
 
   progname = argv[0];
   if (progname == NULL || progname[0] == 0)
@@ -873,6 +1158,15 @@ main(int argc, char **argv)
     input_file = read_stdin();
   }
 
+  if (max_output_size > 0) {
+    temp_input_file = make_seekable_input(input_file);
+    if (temp_input_file == NULL) {
+      fprintf(stderr, "%s: can't buffer standard input\n", progname);
+      exit(EXIT_FAILURE);
+    }
+    input_file = temp_input_file;
+  }
+
   /* Open the output file. */
   if (outfilename != NULL) {
     if ((output_file = fopen(outfilename, WRITE_BINARY)) == NULL) {
@@ -923,121 +1217,89 @@ main(int argc, char **argv)
     progress.report = report;
   }
 
-  /* Figure out the input file format, and set up to read it. */
-  src_mgr = select_file_type(&cinfo, input_file);
-  src_mgr->input_file = input_file;
-#ifdef CJPEG_FUZZER
-  src_mgr->max_pixels = 1048576;
-#endif
-
-  /* Read the input file header to obtain file size & colorspace. */
-  (*src_mgr->start_input) (&cinfo, src_mgr);
-
-  /* Now that we know input colorspace, fix colorspace-dependent defaults */
-#if JPEG_RAW_READER
-  if (!is_jpeg)
-#endif
-  jpeg_default_colorspace(&cinfo);
-
-  /* Adjust default compression parameters by re-parsing the options */
-  file_index = parse_switches(&cinfo, argc, argv, 0, TRUE);
-
-  /* Specify data destination for compression */
-  if (memdst)
-    jpeg_mem_dest(&cinfo, &outbuffer, &outsize);
-  else
-    jpeg_stdio_dest(&cinfo, output_file);
-
 #ifdef CJPEG_FUZZER
   if (setjmp(myerr.setjmp_buffer))
     HANDLE_ERROR()
 #endif
 
-  /* Start compressor */
-  jpeg_start_compress(&cinfo, TRUE);
+  outbuffer = encode_pass(&cinfo, input_file, output_file, argc, argv,
+                          icc_profile, icc_len, -1, &first_quality, &outsize);
 
-  /* Copy metadata */
-  if (copy_markers) {
-    jpeg_saved_marker_ptr marker;
-    
-    /* In the current implementation, we don't actually need to examine the
-     * option flag here; we just copy everything that got saved.
-     * But to avoid confusion, we do not output JFIF and Adobe APP14 markers
-     * if the encoder library already wrote one.
-     */
-    for (marker = src_mgr->marker_list; marker != NULL; marker = marker->next) {
-      if (cinfo.write_JFIF_header &&
-          marker->marker == JPEG_APP0 &&
-          marker->data_length >= 5 &&
-          GETJOCTET(marker->data[0]) == 0x4A &&
-          GETJOCTET(marker->data[1]) == 0x46 &&
-          GETJOCTET(marker->data[2]) == 0x49 &&
-          GETJOCTET(marker->data[3]) == 0x46 &&
-          GETJOCTET(marker->data[4]) == 0)
-        continue;                       /* reject duplicate JFIF */
-      if (cinfo.write_Adobe_marker &&
-          marker->marker == JPEG_APP0+14 &&
-          marker->data_length >= 5 &&
-          GETJOCTET(marker->data[0]) == 0x41 &&
-          GETJOCTET(marker->data[1]) == 0x64 &&
-          GETJOCTET(marker->data[2]) == 0x6F &&
-          GETJOCTET(marker->data[3]) == 0x62 &&
-          GETJOCTET(marker->data[4]) == 0x65)
-        continue;                       /* reject duplicate Adobe */
-      jpeg_write_marker(&cinfo, marker->marker, marker->data,
-                        marker->data_length);
-    }
-  }
-  if (icc_profile != NULL)
-    jpeg_write_icc_profile(&cinfo, icc_profile, (unsigned int)icc_len);
-
-  /* Process data */
-  if (cinfo.data_precision == 16) {
-#ifdef C_LOSSLESS_SUPPORTED
-    while (cinfo.next_scanline < cinfo.image_height) {
-      num_scanlines = (*src_mgr->get_pixel_rows) (&cinfo, src_mgr);
-      (void)jpeg16_write_scanlines(&cinfo, src_mgr->buffer16, num_scanlines);
-    }
-#else
-    ERREXIT1(&cinfo, JERR_BAD_PRECISION, cinfo.data_precision);
-#endif
-  } else if (cinfo.data_precision == 12) {
-    while (cinfo.next_scanline < cinfo.image_height) {
-      num_scanlines = (*src_mgr->get_pixel_rows) (&cinfo, src_mgr);
-      (void)jpeg12_write_scanlines(&cinfo, src_mgr->buffer12, num_scanlines);
-    }
-  } else {
-  while (cinfo.next_scanline < cinfo.image_height) {
-    num_scanlines = (*src_mgr->get_pixel_rows) (&cinfo, src_mgr);
-#if JPEG_RAW_READER
-    if (is_jpeg)
-      (void) jpeg_write_raw_data(&cinfo, src_mgr->plane_pointer, num_scanlines);
-    else
-#endif
-      (void)jpeg_write_scanlines(&cinfo, src_mgr->buffer, num_scanlines);
+  /* If the first estimate overshot, spend one more encode correcting it
+   * rather than a long quality search.  A normal fixed-size encode therefore
+   * costs one pass; the slow path costs two.
+   */
+  if (max_output_size > 0 && outsize > max_output_size) {
+    quality = adjust_quality_for_size(first_quality, outsize,
+                                      max_output_size);
+    free(outbuffer);
+    outbuffer = NULL;
+    jpeg_abort_compress(&cinfo);
+    outbuffer = encode_pass(&cinfo, input_file, output_file, argc, argv,
+                            icc_profile, icc_len, quality, &quality, &outsize);
+  } else if (max_output_size > 0 &&
+             outsize < max_output_size - max_output_size / 10) {
+    quality = adjust_quality_up_for_size(first_quality, outsize,
+                                         max_output_size);
+    if (quality > first_quality) {
+      first_outbuffer = outbuffer;
+      first_outsize = outsize;
+      outbuffer = NULL;
+      jpeg_abort_compress(&cinfo);
+      outbuffer = encode_pass(&cinfo, input_file, output_file, argc, argv,
+                              icc_profile, icc_len, quality, &quality, &outsize);
+      if (outsize > max_output_size || outsize < first_outsize) {
+        free(outbuffer);
+        outbuffer = first_outbuffer;
+        outsize = first_outsize;
+      } else {
+        free(first_outbuffer);
+      }
+      first_outbuffer = NULL;
     }
   }
 
-  /* Finish compression and release memory */
-  (*src_mgr->finish_input) (&cinfo, src_mgr);
-  jpeg_finish_compress(&cinfo);
+#ifndef CJPEG_FUZZER
+  if (max_output_size > 0 && outsize > max_output_size) {
+    fprintf(stderr, "%s: could not meet the %lu-byte limit (got %lu bytes)\n",
+            progname, max_output_size, outsize);
+    free(outbuffer);
+    jpeg_destroy_compress(&cinfo);
+    if (input_file != stdin)
+      fclose(input_file);
+    if (output_file != stdout && output_file != NULL)
+      fclose(output_file);
+    free(icc_profile);
+    return EXIT_FAILURE;
+  }
+#endif
+
   jpeg_destroy_compress(&cinfo);
+
+  if (report)
+    end_progress_monitor((j_common_ptr)&cinfo);
+
+  if (memdst || max_output_size > 0) {
+#ifndef CJPEG_FUZZER
+    fprintf(stderr, "Compressed size:  %lu bytes\n", outsize);
+#endif
+    if (!memdst) {
+      if (fwrite(outbuffer, 1, outsize, output_file) != outsize) {
+        fprintf(stderr, "%s: can't write %s\n", progname,
+                outfilename != NULL ? outfilename : "output");
+        free(outbuffer);
+        free(icc_profile);
+        return EXIT_FAILURE;
+      }
+    }
+    free(outbuffer);
+  }
 
   /* Close files, if we opened them */
   if (input_file != stdin)
     fclose(input_file);
   if (output_file != stdout && output_file != NULL)
     fclose(output_file);
-
-  if (report)
-    end_progress_monitor((j_common_ptr)&cinfo);
-
-  if (memdst) {
-#ifndef CJPEG_FUZZER
-    fprintf(stderr, "Compressed size:  %lu bytes\n", outsize);
-#endif
-    free(outbuffer);
-  }
 
   free(icc_profile);
 

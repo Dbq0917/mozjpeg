@@ -40,6 +40,19 @@ The basic switches are:
 Scale quantization tables to adjust image quality.  Quality is 0 (worst) to
 100 (best); default is 75.  (See below for more info.)
 .TP
+.BI \-maxsize " N"
+Limit the output to at most
+.I N
+bytes.  The suffixes
+.B K
+and
+.B M
+are accepted.  This mode uses a chrominance-weighted quantization table
+designed to retain skin tones and edge detail at low bit rates.  It estimates
+the required quality from the target size and normally encodes the image only
+once.  If the estimate misses the budget, a single corrective encode is
+performed.
+.TP
 .B \-grayscale
 Create monochrome JPEG file from color input.  By specifying
 .BR \-grayscale,
